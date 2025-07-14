@@ -1,120 +1,21 @@
-import React from "react";
-import { View, Text, Button } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-export default function TestScreen() {
+export default function App() {
   return (
-    <View style={{ flex: 1, padding: 16 }}>
-      <Text>Zeile 1</Text>
-      <Text>Zeile 2</Text>
-      <Text>Zeile 3</Text>
-      <Text>Zeile 4</Text>
-      <Text>Zeile 5</Text>
-      <Text>Zeile 6</Text>
-      <Text>Zeile 7</Text>
-      <Text>Zeile 8</Text>
-      <Text>Zeile 9</Text>
-      <Text>Zeile 10</Text>
-      <Text>Zeile 11</Text>
-      <Text>Zeile 12</Text>
-      <Text>Zeile 13</Text>
-      <Text>Zeile 14</Text>
-      <Text>Zeile 15</Text>
-      <Text>Zeile 16</Text>
-      <Text>Zeile 17</Text>
-      <Text>Zeile 18</Text>
-      <Text>Zeile 19</Text>
-      <Text>Zeile 20</Text>
-      <Text>Zeile 21</Text>
-      <Text>Zeile 22</Text>
-      <Text>Zeile 23</Text>
-      <Text>Zeile 24</Text>
-      <Text>Zeile 25</Text>
-      <Text>Zeile 26</Text>
-      <Text>Zeile 27</Text>
-      <Text>Zeile 28</Text>
-      <Text>Zeile 29</Text>
-      <Text>Zeile 30</Text>
-      <Text>Zeile 31</Text>
-      <Text>Zeile 32</Text>
-      <Text>Zeile 33</Text>
-      <Text>Zeile 34</Text>
-      <Text>Zeile 35</Text>
-      <Text>Zeile 36</Text>
-      <Text>Zeile 37</Text>
-      <Text>Zeile 38</Text>
-      <Text>Zeile 39</Text>
-      <Text>Zeile 40</Text>
-      <Text>Zeile 41</Text>
-      <Text>Zeile 42</Text>
-      <Text>Zeile 43</Text>
-      <Text>Zeile 44</Text>
-      <Text>Zeile 45</Text>
-      <Text>Zeile 46</Text>
-      <Text>Zeile 47</Text>
-      <Text>Zeile 48</Text>
-      <Text>Zeile 49</Text>
-      <Text>Zeile 50</Text>
-      <Text>Zeile 51</Text>
-      <Text>Zeile 52</Text>
-      <Text>Zeile 53</Text>
-      <Text>Zeile 54</Text>
-      <Text>Zeile 55</Text>
-      <Text>Zeile 56</Text>
-      <Text>Zeile 57</Text>
-      <Text>Zeile 58</Text>
-      <Text>Zeile 59</Text>
-      <Text>Zeile 60</Text>
-      <Text>Zeile 61</Text>
-      <Text>Zeile 62</Text>
-      <Text>Zeile 63</Text>
-      <Text>Zeile 64</Text>
-      <Text>Zeile 65</Text>
-      <Text>Zeile 66</Text>
-      <Text>Zeile 67</Text>
-      <Text>Zeile 68</Text>
-      <Text>Zeile 69</Text>
-      <Text>Zeile 70</Text>
-      <Text>Zeile 71</Text>
-      <Text>Zeile 72</Text>
-      <Text>Zeile 73</Text>
-      <Text>Zeile 74</Text>
-      <Text>Zeile 75</Text>
-      <Text>Zeile 76</Text>
-      <Text>Zeile 77</Text>
-      <Text>Zeile 78</Text>
-      <Text>Zeile 79</Text>
-      <Text>Zeile 80</Text>
-      <Text>Zeile 81</Text>
-      <Text>Zeile 82</Text>
-      <Text>Zeile 83</Text>
-      <Text>Zeile 84</Text>
-      <Text>Zeile 85</Text>
-      <Text>Zeile 86</Text>
-      <Text>Zeile 87</Text>
-      <Text>Zeile 88</Text>
-      <Text>Zeile 89</Text>
-      <Text>Zeile 90</Text>
-      <Text>Zeile 91</Text>
-      <Text>Zeile 92</Text>
-      <Text>Zeile 93</Text>
-      <Text>Zeile 94</Text>
-      <Text>Zeile 95</Text>
-      <Text>Zeile 96</Text>
-      <Text>Zeile 97</Text>
-      <Text>Zeile 98</Text>
-      <Text>Zeile 99</Text>
-      <Text>Zeile 100</Text>
-      <Text>Zeile 101</Text>
-      <Text>Zeile 102</Text>
-      <Text>Zeile 103</Text>
-      <Text>Zeile 104</Text>
-      <Text>Zeile 105</Text>
-      <Text>Zeile 106</Text>
-      <Text>Zeile 107</Text>
-      <Text>Zeile 108</Text>
-      <Text>Zeile 109</Text>
-      <Text>Zeile 110</Text>
-      {/* ...beliebig weiter... */}
-    </View>
+    <SafeAreaView style={styles.safeArea}>
+      <LinearGradient
+        colors={["#000", "#fff"]}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 2 }}
+        style={{ flex: 1 }}
+      />
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+  },
+});
