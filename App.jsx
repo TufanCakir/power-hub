@@ -8,7 +8,7 @@ export default function App() {
         colors={["#000", "#fff"]}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 2 }}
-        style={{ flex: 1 }}
+        style={styles.linearGradient}
       />
     </SafeAreaView>
   );
@@ -16,6 +16,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   safeArea: {
+    flex: 1,
+  },
+  linearGradient: {
     flex: 1,
   },
 });
